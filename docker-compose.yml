@@ -1,0 +1,14 @@
+services:
+  busgo:
+    build: .
+    container_name: busgo-app
+    ports:
+      - "5000:5000"
+    environment:
+      SECRET_KEY: "replace-this-with-a-long-random-secret"
+      DATABASE_PATH: "/app/data/busgo.db"
+    volumes:
+      - busgo_data:/app/data
+    restart: unless-stopped
+volumes:
+  busgo_data:
