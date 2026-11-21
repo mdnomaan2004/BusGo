@@ -5,7 +5,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      SECRET_KEY: "replace-this-with-a-long-random-secret"
+      SECRET_KEY: ${SECRET_KEY}
       DATABASE_PATH: "/app/data/busgo.db"
     volumes:
       - busgo_data:/app/data

@@ -5,3 +5,5 @@ __pycache__/
 busgo.db
 .env
 .DS_Store
+
+busgo_backup.db

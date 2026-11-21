@@ -1,0 +1,9 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+busgo.db
+busgo_backup.db
+.env
+.git/
+.DS_Store
